@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import NavComponent from './components/nav';
+import Contact from './components/pages/contact';
+import Portfolio from './components/pages/portfolio';
+import About from './components/pages/about';
+import Footer from './components/footer'
 
-function App() {
+function App({children}) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div className='App'>
+      <Router>
+        <NavComponent />
+        <main>
+        <Switch>
+          <Route exact path={['/', '/#/about']}>
+            <About />
+          </Route>
+          {/* <Route exact path='/portfolio'>
+            <Portfolio />
+          </Route>
+          <Route exact path='/contact'>
+            <Contact />
+          </Route> */}
+         
+        </Switch>
+        </main>
+      </Router>
+
+      {/* <Footer /> */}
     </div>
   );
 }
