@@ -17,18 +17,18 @@ function App({children}) {
           <Route exact path={['/', '/#/about']}>
             <About />
           </Route>
-          {/* <Route exact path='/portfolio'>
+          <Route exact path='/portfolio'>
             <Portfolio />
           </Route>
           <Route exact path='/contact'>
             <Contact />
-          </Route> */}
+          </Route>
          
         </Switch>
         </main>
       </Router>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
