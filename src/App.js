@@ -14,7 +14,7 @@ function App({children}) {
         <NavComponent />
         <main>
         <Switch>
-          <Route exact path={['/', '/#/about']}>
+          <Route exact path={['/', '/about']}>
             <About />
           </Route>
           <Route exact path='/portfolio'>
