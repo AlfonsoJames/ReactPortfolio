@@ -23,11 +23,9 @@ function App({children}) {
           <Route exact path='/contact'>
             <Contact />
           </Route>
-         
         </Switch>
         </main>
       </Router>
-
       <Footer />
     </div>
   );
