@@ -1,61 +1,82 @@
 body {
-    /* background-color: rgb(221, 221, 221); */
+    /* background-color: rgb(55, 52, 52); */
     background-image: linear-gradient(rgb(202, 202, 202), rgb(89, 133, 151));
     height: 100%;
     /* float: left; */
     padding: 25px;
-  }
+}
 
-  nav {
+nav {
     background-color: gray;
-  }
+}
 
-  footer {
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 10vh;
     background-color: rgb(66, 66, 66);
     color: white;
     text-align: center;
-  }
+}
 
-  img {
-    width: 30%;
-    height: auto;
-    display: inline-block;
+.PP {
+    height: 75vh;
+    /* display: inline-block; */
     /* remove extra space below image */
     padding-top: 5%;
+    object-fit: contain;
     padding-bottom: 5%;
-  }
+}
 
-  article {
+article {
     padding-right: 5%;
-  }
-  
-  .carousel-inner {
-      height: 65vh;
-      object-fit: contain;
-  }
+}
 
-  center {
+.carousel-inner {
+    height: 65vh;
+    object-position: center;
+}
+
+center {
     height: 200px;
     position: relative;
     border: 3px solid green;
-  }
+}
 
-  center p {
+center p {
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  }
+}
 
-  main {
+.HS {
+    width: 33vw;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    /* width: 40%; */
+}
+
+
+
+.link {
+    object-fit: scale-down;
+    height: 13vh;
+    width: auto;
+}
+
+main {
     height: 75vh;
-  }
+}
 
 .sideScroller {
     width: 500px;
@@ -76,6 +97,7 @@ body {
     display: inline-block;
     zoom: 1;
 }
+
 .squeeze {
     height: 70vh !important;
 }

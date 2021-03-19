@@ -7,18 +7,15 @@ console.log(Headshot);
 function About() {
 
     return (
-        <Container>
+        <Container fluid>
             <Row>
-                <Container className="align-middle">
-                    <img src={Headshot} />
-                </Container>
-            </Row>
-            <Row>
-                <Container className="col-auto align-middle">
-                    <p >Having my spent most of my life as an entertainer and story-teller it is my goal to build engaging and intuiative web applications that facilitate interaction and encourage a pleasantly entertaining and memorable user experience.
+                <Col >
+                    <img className="HS" src={Headshot} />
+                </Col>
+                <Col >
+                    <p >Having my spent most of my life as an entertainer and story-teller, it is my goal to build engaging and intuitive web applications that facilitate interaction and encourage a pleasantly entertaining and memorable user experience. 
                     </p>
-                </Container>
-
+                </Col>
             </Row>
         </Container>
 
