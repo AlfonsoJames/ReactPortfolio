@@ -1,49 +1,44 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import TT5 from '../../assets/TT5sh.png';
-import WD from '../../assets/WDsh.png'
+import WD from '../../assets/WDsh.png';
+import MH from '../../assets/MHsh.png';
 
-function Portfolio () {
 
-    return (
-        <Carousel>
-        <Carousel.Item>
+
+function Portfolio() {
+
+  return (
+    <Carousel className="squeeze">
+      <Carousel.Item>
+        <a href="https://alfonsojames.github.io/Travelers-Top-5/">
           <img
-            className="d-block w-100"
+            className="d-block w-100 PP"
             src={TT5}
             alt="Traveler's Top 5 Web Application"
           />
-          <Carousel.Caption>
-            {/* <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
+        </a>
+      </Carousel.Item>
+      <Carousel.Item>
+        <a href="https://alfonsojames.github.io/AJHW6/">
           <img
-            className="d-block w-100"
-            src={WD} 
+            className="d-block w-100 PP"
+            src={WD}
             alt="Weather Dashboard Web Application"
           />
-      
-          <Carousel.Caption>
-            {/* <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
-          </Carousel.Caption>
-        </Carousel.Item>
-        {/* <Carousel.Item>
+        </a>
+      </Carousel.Item>
+      <Carousel.Item>
+        <a href="https://memeheim.herokuapp.com">
           <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=Third slide&bg=20232a"
-            alt="Third slide"
+            className="d-block w-100 PP"
+            src={MH}
+            alt="Memeheim Web Application"
           />
-      
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-          </Carousel.Caption>
-        </Carousel.Item> */}
-      </Carousel>
-    );
+        </a>
+      </Carousel.Item>
+    </Carousel>
+  );
 };
 
 export default Portfolio;

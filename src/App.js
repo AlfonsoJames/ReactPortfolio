@@ -14,7 +14,7 @@ function App({children}) {
         <NavComponent />
         <main>
         <Switch>
-          <Route exact path={['/', '/#/about']}>
+          <Route exact path={['/', '/about']}>
             <About />
           </Route>
           <Route exact path='/portfolio'>
@@ -23,11 +23,9 @@ function App({children}) {
           <Route exact path='/contact'>
             <Contact />
           </Route>
-         
         </Switch>
         </main>
       </Router>
-
       <Footer />
     </div>
   );
