@@ -13,7 +13,7 @@ function About() {
                     <img className="HS" src={Headshot} />
                 </Col>
                 <Col >
-                    <p >Having my spent most of my life as an entertainer and story-teller, it is my goal to build engaging and intuitive web applications that facilitate interaction and encourage a pleasantly entertaining and memorable user experience. 
+                    <p >Having spent most of my life as a live-performer and story-teller, it is my goal to build engaging and intuitive web applications that facilitate interaction and encourage a entertaining and memorable user experience. 
                     </p>
                 </Col>
             </Row>
