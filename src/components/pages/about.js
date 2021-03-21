@@ -13,9 +13,9 @@ function About() {
                     <img className="HS" src={Headshot} />
                 </Col> */}
                 <Col >
-                    <p >Having spent most of my life as a live-performer and story-teller, it is my goal to build engaging and intuitive web applications that facilitate interaction and encourage a entertaining and memorable user experience. 
+                    <p className="center p">Having spent most of my life as a live-performer and story-teller, it is my goal to build engaging and intuitive web applications that facilitate interaction and encourage a entertaining and memorable user experience. 
                     </p>
-                    <iframe src="https://drive.google.com/file/d/1FJKc8IaAUkfwvCKUiVrtSlAkYA4gIOCa/preview" width="100%" height="auto"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1FJKc8IaAUkfwvCKUiVrtSlAkYA4gIOCa/preview" width="100%" height="100%"></iframe>
                 </Col>
             </Row>
         </Container>

@@ -13,8 +13,7 @@ function Contact() {
                         <phone>(321) 262-7458</phone><br />
                         <a href="mailto:DPAlfonsoJames@gmail.com">DPAlfonsoJames@gmail.com</a>
                     </address>
-                </Col>
-                <Col>
+              
                     <a href="https://www.linkedin.com/in/alfonso-james-74354653/"><img className='link' src={linked}/></a>
                 </Col>
                 {/* <Col>
