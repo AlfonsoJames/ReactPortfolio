@@ -9,12 +9,13 @@ function About() {
     return (
         <Container fluid>
             <Row>
-                <Col >
+                {/* <Col >
                     <img className="HS" src={Headshot} />
-                </Col>
+                </Col> */}
                 <Col >
                     <p >Having spent most of my life as a live-performer and story-teller, it is my goal to build engaging and intuitive web applications that facilitate interaction and encourage a entertaining and memorable user experience. 
                     </p>
+                    <iframe src="https://drive.google.com/file/d/1FJKc8IaAUkfwvCKUiVrtSlAkYA4gIOCa/preview" width="100%" height="auto"></iframe>
                 </Col>
             </Row>
         </Container>
