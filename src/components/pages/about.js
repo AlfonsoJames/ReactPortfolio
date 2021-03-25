@@ -15,7 +15,7 @@ function About() {
                 <Col >
                     <p className="center p">Having spent most of my life as a live-performer and story-teller, it is my goal to build engaging and intuitive web applications that facilitate interaction and encourage a entertaining and memorable user experience. 
                     </p>
-                    <iframe src="https://drive.google.com/file/d/1FJKc8IaAUkfwvCKUiVrtSlAkYA4gIOCa/preview" width="100%" height="100%"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1Rs8njhxd9MMtfMVPbDpyjHTpuvRwXtL9/preview" width="100%" height="100%"></iframe>
                 </Col>
             </Row>
         </Container>
