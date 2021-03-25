@@ -3,6 +3,8 @@ import { Carousel } from 'react-bootstrap';
 import TT5 from '../../assets/TT5sh.png';
 import WD from '../../assets/WDsh.png';
 import MH from '../../assets/MHsh.png';
+import CA from '../../assets/CAsh.png';
+
 
 function Portfolio() {
 
@@ -23,6 +25,15 @@ function Portfolio() {
             className="d-block w-100 PP"
             src={TT5}
             alt="Traveler's Top 5 Web Application"
+          />
+        </a>
+      </Carousel.Item>
+      <Carousel.Item>
+        <a href="https://crushitapp.herokuapp.com/">
+          <img
+            className="d-block w-100 PP"
+            src={CA}
+            alt="Crush It Mobile Workout Planner"
           />
         </a>
       </Carousel.Item>
