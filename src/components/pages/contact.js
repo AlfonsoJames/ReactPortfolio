@@ -5,10 +5,10 @@ import linked from '../../assets/Linked.png'
 function Contact() {
 
     return (
-        <Container>
-            <Row>
-                <Col>
-                    <address>
+        <Container className="h-100 contact">
+            <Row className="align-items-center h-100">
+                <Col align="center">
+                    <address >
                         <strong>Alfonso James</strong><br />
                         <phone>(321) 262-7458</phone><br />
                         <a href="mailto:DPAlfonsoJames@gmail.com">DPAlfonsoJames@gmail.com</a>
