@@ -6,7 +6,7 @@ function NavComponent() {
     return (
         <nav>
             <Navbar bg="light" expand="lg">
-                <Navbar.Brand href="#about">Alfonso James</Navbar.Brand>
+                <Navbar.Brand href="#about">About</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
