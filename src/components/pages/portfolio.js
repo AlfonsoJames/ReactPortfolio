@@ -1,14 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Carousel } from 'react-bootstrap';
 import TT5 from '../../assets/TT5sh.png';
 import WD from '../../assets/WDsh.png';
 import MH from '../../assets/MHsh.png';
 import CA from '../../assets/CAsh.png';
+import ReactLoading from "react-loading";
 
 
 function Portfolio() {
+  const [done, setDone] = useState(undefined);
+
+  useEffect(() => {
+      setTimeout(() => {
+          setDone(true);
+      }, 1500);
+  }, []);
 
   return (
+    <>
+    {!done ? (
+      <ReactLoading
+          className='loader'
+          type={"bars"}
+          color={"white"}
+          height={100}
+          width={100}
+      />
+  ) : (
     <Carousel className="squeeze">
       <Carousel.Item>
         <a href="https://memeheim.herokuapp.com">
@@ -47,6 +65,8 @@ function Portfolio() {
         </a>
       </Carousel.Item>
     </Carousel>
+  )}
+  </>
   );
 };
 

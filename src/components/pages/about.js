@@ -12,7 +12,7 @@ function About() {
     useEffect(() => {
         setTimeout(() => {
             setDone(true);
-        }, 2000);
+        }, 1500);
     }, []);
 
     return (
