@@ -2,6 +2,7 @@ import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 
 function NavComponent() {
+    
 
     return (
         <nav>

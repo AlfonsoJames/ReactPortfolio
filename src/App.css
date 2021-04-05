@@ -1,79 +1,76 @@
 body {
-    /* background-color: rgb(55, 52, 52); */
-    background-image: linear-gradient(rgb(41, 41, 41), #cc0000);
-    height: 100%;
-    /* float: left; */
-    padding: 25px;
+  /* background-color: rgb(55, 52, 52); */
+  background-image: linear-gradient(rgb(41, 41, 41), #cc0000);
+  height: 100%;
+  /* float: left; */
+  padding: 25px;
 }
 
-
 @keyframes pulse {
-    from {
-      color: rgba(51, 51, 51, 0.295)
-    }
-    to {
-      color: rgba(221, 221, 221, 0.898)
-    }
+  from {
+    color: rgba(51, 51, 51, 0.295)
   }
+  to {
+    color: rgba(221, 221, 221, 0.898)
+  }
+}
 
 .contact {
-
-    position: relative;
+  position: relative;
 }
 
 nav {
-    background-color: gray;
+  background-color: gray;
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 10vh;
-    background-color: #cc0000;
-    background-image: linear-gradient( #cc0000ea,rgba(41, 41, 41, 0.898));
-    color: white;
-    text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: #cc0000;
+  background-image: linear-gradient( #cc0000ea, rgba(41, 41, 41, 0.898));
+  color: white;
+  text-align: center;
 }
 
 .PP {
-    height: 75vh;
-    /* display: inline-block; */
-    /* remove extra space below image */
-    padding-top: 5%;
-    object-fit: contain;
-    padding-bottom: 5%;
+  height: 75vh;
+  /* display: inline-block; */
+  /* remove extra space below image */
+  padding-top: 5%;
+  object-fit: contain;
+  padding-bottom: 5%;
 }
 
 article {
-    padding-right: 5%;
+  padding-right: 5%;
 }
 
 .carousel-inner {
-    height: 65vh;
-    object-position: center;
+  height: 65vh;
+  object-position: center;
 }
 
 .center {
-    animation: glow 1.5s infinite alternate;
+  animation: glow 1.5s infinite alternate;
 }
 
 center p {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    /* animation: pulse 2s infinite alternate; */
-    
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /* animation: pulse 2s infinite alternate; */
 }
 
 @keyframes glow {
-    to {
-        text-shadow: 0 0 5px #ffcc01;
-    }
+  to {
+    text-shadow: 0 0 5px #ffcc01;
+  }
 }
 
 /* @keyframes pulse {
@@ -86,52 +83,120 @@ center p {
   } */
 
 .HS {
-    width: 33vw;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    /* width: 40%; */
+  width: 33vw;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  /* width: 40%; */
 }
 
-
-
 .link {
-    object-fit: scale-down;
-    height: 13vh;
-    width: auto;
+  object-fit: scale-down;
+  height: 13vh;
+  width: auto;
 }
 
 main {
-    height: 75vh;
+  height: 75vh;
 }
 
 .sideScroller {
-    width: 500px;
-    height: 100px;
-    white-space: nowrap;
-    position: relative;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
+  width: 500px;
+  height: 100px;
+  white-space: nowrap;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 .sideScroller div {
-    width: 24.5%;
-    background-color: #eee;
-    float: none;
-    height: 90%;
-    margin: 0 0.25%;
-    display: inline-block;
-    zoom: 1;
+  width: 24.5%;
+  background-color: #eee;
+  float: none;
+  height: 90%;
+  margin: 0 0.25%;
+  display: inline-block;
+  zoom: 1;
 }
 
 .squeeze {
-    height: 70vh !important;
+  height: 70vh !important;
 }
+
 p {
-    text-align: center;
+  text-align: center;
+}
+
+/* Center the loader */
+
+.loader {
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30vh;
+
+ 
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add animation to "page content" */
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+  to {
+    bottom: 0px;
+    opacity: 1
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
 }
