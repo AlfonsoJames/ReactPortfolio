@@ -19,8 +19,8 @@ body {
   position: relative;
 }
 
-nav {
-  background-color: gray;
+.bg-dark {
+  background-color: transparent !important;
 }
 
 footer {
@@ -49,7 +49,7 @@ article {
 }
 
 .carousel-inner {
-  height: 65vh;
+ 
   object-position: center;
 }
 
@@ -126,6 +126,7 @@ main {
 
 .squeeze {
   height: 70vh !important;
+
 }
 
 p {
